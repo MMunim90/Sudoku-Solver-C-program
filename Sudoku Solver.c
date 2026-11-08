@@ -7,12 +7,11 @@ int solve_puzzle(int puzzle[9][9], int row, int column);
 int main()
 {
     printf("\n\tWelcome to SUDOKU Solver !!!\n");
-    printf("\nOriginal Puzzle: \n");
 
     int puzzle[9][9];
 
     // input puzzle
-    printf("\nEnter 9X9 Puzzle(Input 0 where empty): \n");
+    printf("\nEnter 9X9 Puzzle (Input 0 where empty): \n");
     for(int row=0; row<9; row++)
     {
         for(int column=0; column<9; column++)
@@ -22,7 +21,9 @@ int main()
         printf("\n");
     }
 
+    printf("\nOriginal Puzzle: \n");
     print_puzzle(puzzle);
+
     if(solve_puzzle(puzzle, 0, 0))
     {
         printf("\n\nThe puzzle is solved: \n");
