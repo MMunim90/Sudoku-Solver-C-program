@@ -11,14 +11,14 @@ int main()
     int puzzle[9][9];
 
     // input puzzle
-    printf("\nEnter 9X9 Puzzle (Input 0 where empty): \n");
+    printf("\nInput 9X9 Puzzle (Input 0 onto the empty cell)\n\n");
     for(int row=0; row<9; row++)
     {
+        printf("Enter %dth row:- ", row+1);
         for(int column=0; column<9; column++)
         {
             scanf("%d", &puzzle[row][column]);
         }
-        printf("\n");
     }
 
     printf("\nOriginal Puzzle: \n");
